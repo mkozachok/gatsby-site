@@ -6,9 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Pandas eating things`,
-    description: `A simple description about pandas eating lots...`,
-    author: `Mykhaylo`,
+    title: `Driving the life`,
+    description: `Blog stories about traveling, crafting and testy food`,
+    author: `Max Irvin`,
+    // TODO: Add social links
   },
   plugins: [
     `gatsby-transformer-remark`,
@@ -18,7 +19,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`,
+        path: `${__dirname}/src/data`,
       },
     },
     {
@@ -36,7 +37,20 @@ module.exports = {
         background_color: `#6b37bf`,
         theme_color: `#6b37bf`,
         display: `standalone`,
+        // TODO: Create favicon
         // icon: `src/images/icon.png`,
+      },
+    },
+    // {
+    //   resolve: "gatsby-plugin-categories",
+    //   options: {
+    //     templatePath: `${__dirname}/src/templates/category.js`,
+    //   },
+    // },
+    {
+      resolve: "gatsby-plugin-tags",
+      options: {
+        templatePath: `${__dirname}/src/templates/tag.js`,
       },
     },
   ],
