@@ -15,7 +15,7 @@ export default ({ data }) => {
             border-bottom: 1px solid;
           `}
         >
-          Amazing Pandas Eating Things
+          Stories
         </h1>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         <GeneralPostList nodes={data.allMarkdownRemark.edges} />
@@ -34,6 +34,9 @@ export const query = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            previewImage {
+              publicURL
+            }
           }
           fields {
             slug

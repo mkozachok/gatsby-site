@@ -20,6 +20,15 @@ export const GeneralPostList = ({ nodes }) =>
           — {node.frontmatter.date}
         </span>
       </h3>
+      <img
+        src={
+          node.frontmatter.previwImage &&
+          node.frontmatter.previwImage.absolutePath
+        }
+      />
+      {node.frontmatter.previewImage && (
+        <img src={node.frontmatter.previewImage.publicURL} />
+      )}
       <p>{node.excerpt}</p>
       <p>
         <Link to={node.fields.slug}>Read more</Link>

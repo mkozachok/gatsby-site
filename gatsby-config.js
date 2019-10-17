@@ -55,16 +55,16 @@ module.exports = {
         // icon: `src/images/icon.png`,
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-categories",
-    //   options: {
-    //     templatePath: `${__dirname}/src/templates/category.js`,
-    //   },
-    // },
     {
       resolve: "gatsby-plugin-tags",
       options: {
         templatePath: `${__dirname}/src/templates/tag.js`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-categories",
+      options: {
+        templatePath: `${__dirname}/src/templates/category.js`,
       },
     },
   ],
