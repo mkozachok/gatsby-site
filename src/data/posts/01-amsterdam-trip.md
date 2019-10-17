@@ -7,5 +7,6 @@ tags:
 ---
 
 We have been visited Amsterdam in Spring.
-
-<img src="" alt="No image" />
+![](amsterdam-01.jpg) _Photo by
+[Joshua Earle](https://unsplash.com/@joshuaearle) via
+[Unsplash](https://unsplash.com/@joshuaearle?photo=-87JyMb9ZfU)_
