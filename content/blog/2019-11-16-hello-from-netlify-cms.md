@@ -9,6 +9,8 @@ description: First post by netlify cms
 
 ### good
 
+![This is red apple](/img/apple-blossom-awards-2020-61.jpeg "This is red apple")
+
 * listy
 * listy
 
