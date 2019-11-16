@@ -29,7 +29,7 @@ export const GeneralPostList = ({ nodes }) =>
       {node.frontmatter.previewImage && (
         <img src={node.frontmatter.previewImage.publicURL} />
       )}
-      <p>{node.excerpt}</p>
+      <p>{node.frontmatter.description}</p>
       <p>
         <Link to={node.fields.slug}>Read more</Link>
       </p>

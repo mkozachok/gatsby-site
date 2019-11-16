@@ -6,6 +6,7 @@ tags:
   - travel
   - amsterdam
 previewImage: amsterdam-01.jpg
+description: short text
 ---
 
 We have been visited Amsterdam in Spring.

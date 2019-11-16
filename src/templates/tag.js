@@ -7,7 +7,6 @@ import { GeneralPostList } from "../components/GeneralPostList"
 
 const CategoryTemplate = ({ location, pageContext, data }) => {
   const { tag } = pageContext
-  console.log()
   return (
     <Layout location={location} title={`Posts in tag "${tag}"`}>
       <div className="tag-container">
@@ -39,6 +38,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date
+            description
           }
         }
       }
