@@ -12,6 +12,7 @@ module.exports = {
     // TODO: Add social links
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
