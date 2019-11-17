@@ -1,18 +1,12 @@
 ---
-title: "Spring in Amsterdam"
-date: "2017-10-11"
-category: Travel
-tags:
-  - travel
-  - amsterdam
-previewImage: amsterdam-01.jpg
-description: short text
+title: Spring in Amsterdam
+date: '2017-10-11'
+description: Весняний Амстердам
 ---
+Я люблю подорожувати весною. Мені подобаєтся спостерігати, як природа відроджуєтся і починає свій новий життєвий цикл. Світить сонце, але ще не пече, співають пташки, повітря чисте і наповненне ароматами весняних квітів. 
 
-We have been visited Amsterdam in Spring.
-![](amsterdam-01.jpg "Amsterdam canals")
+Перша причина, чому варто відвідати Нідерланди весною - це тюльпани. В цю пору тюльпани можна знайти повсюди: в парках, на алеях, клумбах, біля будинків, на полях. Магазини переповненні як і тюльпанами, так їх цибулинами. 
 
-![](amsterdam-02.jpg "Amsterdam canals")
+![Тюльпани в Нідерландах](/img/img_20190409_141929.jpg "Тюльпани в Нідерландах")
 
-We rented a car in Weeze.
-![](polo-01.jpg "VW Polo")
+далі буде ...
