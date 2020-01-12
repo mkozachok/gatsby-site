@@ -22,13 +22,7 @@ export const GeneralPostList = ({ nodes }) =>
       >
         <p className="preview-date">{node.frontmatter.date}</p>
       </span>
-      <img
-        src={
-          node.frontmatter.previwImage &&
-          node.frontmatter.previwImage.absolutePath
-        }
-      />
-      {node.frontmatter.previewImage && (
+      {!!node.frontmatter.previewImage && (
         <img src={node.frontmatter.previewImage.publicURL} />
       )}
       <p>{node.frontmatter.description}</p>
