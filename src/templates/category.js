@@ -11,9 +11,8 @@ const CategoryTemplate = ({ location, pageContext, data }) => {
     <Layout location={location} title={`Posts in category "${category}"`}>
       <div className="category-container">
         <SEO title={`Posts in category "${category}"`} />
-
         <div>
-          <h1>Category: {category}</h1>
+          <h2>Category: {category}</h2>
           <GeneralPostList nodes={data.allMarkdownRemark.edges} />
         </div>
       </div>
@@ -38,7 +37,10 @@ export const pageQuery = graphql`
           timeToRead
           frontmatter {
             title
-            date
+            date(formatString: "DD MMMM, YYYY")
+            previewImage {
+              publicURL
+            }
             description
           }
         }

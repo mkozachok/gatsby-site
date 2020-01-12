@@ -1,8 +1,8 @@
 import React from "react"
 import { css } from "@emotion/core"
 import { useStaticQuery, Link, graphql } from "gatsby"
-
 import { rhythm } from "../utils/typography"
+import Footer from "./Footer"
 
 export default ({ children }) => {
   const data = useStaticQuery(
@@ -45,6 +45,7 @@ export default ({ children }) => {
         About
       </Link>
       {children}
+      <Footer />
     </div>
   )
 }

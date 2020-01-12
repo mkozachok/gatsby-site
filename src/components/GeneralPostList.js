@@ -6,20 +6,22 @@ import { rhythm } from "../utils/typography"
 export const GeneralPostList = ({ nodes }) =>
   nodes.map(({ node }) => (
     <div key={node.id}>
-      <h3
+      <Link
+        className="preview-title"
         css={css`
           margin-bottom: ${rhythm(1 / 4)};
         `}
+        to={node.fields.slug}
       >
-        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
-        <span
-          css={css`
-            color: #bbb;
-          `}
-        >
-          — {node.frontmatter.date}
-        </span>
-      </h3>
+        {node.frontmatter.title}
+      </Link>
+      <span
+        css={css`
+          color: #bbb;
+        `}
+      >
+        <p className="preview-date">{node.frontmatter.date}</p>
+      </span>
       <img
         src={
           node.frontmatter.previwImage &&

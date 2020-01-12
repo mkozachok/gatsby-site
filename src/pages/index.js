@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { css } from "@emotion/core"
 import Layout from "../components/layout"
 import { GeneralPostList } from "../components/GeneralPostList"
 
@@ -8,18 +7,7 @@ export default ({ data }) => {
   console.log(data)
   return (
     <Layout>
-      <div>
-        <h1
-          css={css`
-            display: inline-block;
-            border-bottom: 1px solid;
-          `}
-        >
-          Stories
-        </h1>
-        <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        <GeneralPostList nodes={data.allMarkdownRemark.edges} />
-      </div>
+      <GeneralPostList nodes={data.allMarkdownRemark.edges} />
     </Layout>
   )
 }
