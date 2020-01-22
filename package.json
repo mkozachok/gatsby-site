@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.21",
+    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.15.29",
     "gatsby-image": "^2.2.38",
     "gatsby-plugin-emotion": "^4.1.9",
@@ -22,6 +23,7 @@
     "gatsby-plugin-offline": "^3.0.14",
     "gatsby-plugin-react-helmet": "^3.1.11",
     "gatsby-plugin-sharp": "^2.2.31",
+    "gatsby-plugin-styled-components": "^3.1.17",
     "gatsby-plugin-tags": "^2.3.6",
     "gatsby-plugin-typography": "^2.3.11",
     "gatsby-remark-copy-linked-files": "^2.1.28",
@@ -39,6 +41,7 @@
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
+    "styled-components": "^5.0.0",
     "typography": "^0.16.19",
     "typography-theme-kirkham": "^0.16.19"
   },

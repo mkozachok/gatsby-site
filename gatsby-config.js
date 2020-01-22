@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Driving the life`,
+    title: `Blog`,
     description: `Blog stories about traveling, crafting and testy food`,
     author: `Max Irvin`,
     // TODO: Add social links
@@ -38,7 +38,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-emotion`,
+    `gatsby-plugin-emotion`, // TODO: remove
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,

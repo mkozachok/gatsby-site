@@ -9,6 +9,7 @@ export const GeneralPostList = ({ nodes }) =>
       <Link
         className="preview-title"
         css={css`
+          color: red;
           margin-bottom: ${rhythm(1 / 4)};
         `}
         to={node.fields.slug}
@@ -27,7 +28,7 @@ export const GeneralPostList = ({ nodes }) =>
       )}
       <p>{node.frontmatter.description}</p>
       <p>
-        <Link to={node.fields.slug}>Read more</Link>
+        <Link to={node.fields.slug}>Read more </Link>
       </p>
     </div>
   ))

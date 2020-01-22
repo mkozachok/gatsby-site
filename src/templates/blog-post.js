@@ -1,19 +1,35 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+const Header = styled.header`
+  text-align: center;
+  padding: 36px 0;
+  h1 {
+    font-weight: 600;
+  }
+  p {
+    color: #777;
+    font-size: 14px;
+  }
+`
+
 export default ({ data }) => {
-  const post = data.markdownRemark
+  const {
+    frontmatter: { title, date },
+    html,
+  } = data.markdownRemark
   return (
     <Layout>
-      <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.title}
-      />
+      <SEO title={title} description={title} />
       <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Header>
+          <h1>{title}</h1>
+          <p>{date}</p>
+        </Header>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </div>
     </Layout>
   )
@@ -25,6 +41,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "DD MMMM, YYYY")
       }
     }
   }

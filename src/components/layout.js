@@ -1,11 +1,22 @@
 import React from "react"
 import { css } from "@emotion/core"
+import styled from "styled-components"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
-import Footer from "./Footer"
+import Footer from "./footer"
+
+const Main = styled.main`
+  margin: 0 auto;
+  max-width: 768px;
+  padding-top: 24px;
+`
 
 export default ({ children }) => {
-  const data = useStaticQuery(
+  const {
+    site: {
+      siteMetadata: { title },
+    },
+  } = useStaticQuery(
     graphql`
       query {
         site {
@@ -17,24 +28,17 @@ export default ({ children }) => {
     `
   )
   return (
-    <div
-      css={css`
-        margin: 0 auto;
-        max-width: 700px;
-        padding: ${rhythm(2)};
-        padding-top: ${rhythm(1.5)};
-      `}
-    >
+    <Main>
       <Link to={`/`}>
-        <h3
+        <h1
           css={css`
             margin-bottom: ${rhythm(2)};
             display: inline-block;
             font-style: normal;
           `}
         >
-          {data.site.siteMetadata.title}
-        </h3>
+          {title}
+        </h1>
       </Link>
       <Link
         to={`/about/`}
@@ -46,6 +50,6 @@ export default ({ children }) => {
       </Link>
       {children}
       <Footer />
-    </div>
+    </Main>
   )
 }
