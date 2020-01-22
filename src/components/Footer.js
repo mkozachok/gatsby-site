@@ -4,7 +4,7 @@ import { css } from "@emotion/core"
 
 const tags = ["travel", "amsterdam"]
 const categories = ["travel", "coding"]
-export default () => (
+export const Footer = () => (
   <footer>
     <article>
       Menu:{" "}

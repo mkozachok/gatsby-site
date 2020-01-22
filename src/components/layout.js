@@ -3,7 +3,7 @@ import { css } from "@emotion/core"
 import styled from "styled-components"
 import { useStaticQuery, Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
-import Footer from "./footer"
+import { Footer } from "./footer"
 
 const Main = styled.main`
   margin: 0 auto;
