@@ -25,7 +25,7 @@ export const GeneralPostList = ({ nodes }) =>
         <p className="preview-date">{node.frontmatter.date}</p>
       </span>
       {!!node.frontmatter.previewImage &&
-        node.frontmatter.previewImage.childImageSharp.fluid && (
+        node.frontmatter.previewImage.childImageSharp && (
           <Img fluid={node.frontmatter.previewImage.childImageSharp.fluid} />
         )}
       <p>{node.frontmatter.description}</p>
