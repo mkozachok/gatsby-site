@@ -19,6 +19,7 @@ const Footer = () => (
       Menu:{" "}
       {categories.map(c => (
         <Link
+          key={c}
           css={css`
             margin-right: 5px;
           `}
@@ -32,6 +33,7 @@ const Footer = () => (
       Tags:{" "}
       {tags.map(t => (
         <Link
+          key={t}
           css={css`
             margin-right: 5px;
           `}
