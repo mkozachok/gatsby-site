@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { css } from "@emotion/core"
+import Img from "gatsby-image"
 import { rhythm } from "../utils/typography"
 
 export const GeneralPostList = ({ nodes }) =>
@@ -23,9 +24,10 @@ export const GeneralPostList = ({ nodes }) =>
       >
         <p className="preview-date">{node.frontmatter.date}</p>
       </span>
-      {!!node.frontmatter.previewImage && (
-        <img src={node.frontmatter.previewImage.publicURL} />
-      )}
+      {!!node.frontmatter.previewImage &&
+        node.frontmatter.previewImage.childImageSharp && (
+          <Img fluid={node.frontmatter.previewImage.childImageSharp.fluid} />
+        )}
       <p>{node.frontmatter.description}</p>
       <p>
         <Link to={node.fields.slug}>Read more </Link>

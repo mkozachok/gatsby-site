@@ -23,7 +23,11 @@ export const query = graphql`
             title
             date(formatString: "DD MMMM, YYYY")
             previewImage {
-              publicURL
+              childImageSharp {
+                fluid(maxWidth: 800) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
             description
           }
